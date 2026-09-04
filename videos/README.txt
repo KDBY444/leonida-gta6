@@ -1,14 +1,17 @@
-V8 - CLIPS INTEGRADOS
+V9 - VÍDEOS DENTRO DE LEONIDA
 
-La página clips-gameplay.html ahora muestra varios clips de 30 segundos
-reproducidos dentro de LEONIDA mediante el reproductor oficial de YouTube.
+Los clips de clips-gameplay.html usan el reproductor HTML5 de la propia página
+y apuntan a tramos de 30 segundos del MP4 oficial de Rockstar Games.
 
-Categorías:
-- conducción
-- movilidad
-- combate
-- entorno
-- vehículos
+Esto hace que el visitante vea el vídeo en la tarjeta, sin un enlace inferior
+al trailer ni una página externa.
 
-Fuente: material oficial de Rockstar Games.
-No se alojan ni redistribuyen archivos filtrados de terceros.
+Los tiempos seleccionados son:
+- 08:56 conducción
+- 00:08 movilidad
+- 14:16 disparos desde vehículo
+- 18:28 entorno
+- 18:06 motocicleta
+- 24:01 combate
+
+Fuente: Rockstar Games, Grand Theft Auto VI: An Extended Look.
