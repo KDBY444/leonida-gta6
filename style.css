@@ -10,3 +10,23 @@
 .vehicleGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.vehicleGrid>div{border:1px solid var(--line);padding:30px;background:#121613}.vehicleGrid strong{font-size:35px}.vehicleGrid h3{margin-top:18px}.faq details{border-top:1px solid var(--line);padding:20px 0}.faq summary{cursor:pointer;font:700 22px 'Barlow Condensed'}.faq p{color:var(--muted);line-height:1.7;font-size:13px;max-width:750px}
 footer{border-top:1px solid var(--line);background:#080a09}.footerGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;padding-top:55px;padding-bottom:45px}.footerGrid p{color:#777f78;font-size:12px;max-width:330px;line-height:1.6}.footerGrid h4{font-size:10px;letter-spacing:2px;color:var(--lime)}.footerGrid div>a:not(.logo){display:block;font-size:12px;color:#9ca39d;margin:12px 0}.copyright{border-top:1px solid var(--line);padding-top:20px;padding-bottom:25px;color:#5e665f;font-size:10px}
 @media(max-width:800px){nav{display:none}.menu{display:block}.hero{min-height:670px}.heroContent{padding-top:90px}.hero h1{font-size:72px}.heroStats{position:relative;bottom:auto;left:auto;transform:none;margin-top:70px}.heroStats div{padding:12px 15px}.grid,.mechanics,.timeline,.vehicleGrid,.mapBox{grid-template-columns:1fr}.visual{height:190px}.mapBox>div:first-child{padding:40px}.fakeMap{height:280px}.section{padding-top:60px;padding-bottom:60px}.footerGrid{grid-template-columns:1fr 1fr}.footerGrid>div:first-child{grid-column:1/-1}}
+
+.articleWrap{max-width:900px;margin:auto;padding:90px 24px}
+.articleWrap h1{font:800 clamp(50px,7vw,88px)/.9 'Barlow Condensed';margin:15px 0 20px}
+.articleIntro{font-size:18px;line-height:1.75;color:#c4cac4}
+.meta{font-size:11px;color:#788078;margin:18px 0 35px}
+.articleBody{font-size:16px;line-height:1.85;color:#c5cbc5}
+.articleBody h2{margin-top:55px}
+.sourceBox{margin-top:45px;padding:22px;border:1px solid #252b27;background:#121613;font-size:12px;color:#9da59d}
+.sourceBox a{color:#d9ff4a}
+.back{display:inline-block;margin-bottom:20px;color:#d9ff4a;font-size:12px;font-weight:700}
+.articleList{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.articleLink{display:block;padding:28px;border:1px solid #252b27;background:#111511}
+.articleLink:hover{border-color:#6a756b}
+.articleLink h3{font:700 29px/1.05 'Barlow Condensed';margin:12px 0}
+.articleLink p{color:#a8afa8;font-size:13px;line-height:1.6}
+.categoryHero{padding:85px 0 50px;background:linear-gradient(120deg,#151b15,#0b0d0c)}
+.categoryHero h1{font:800 clamp(55px,8vw,100px)/.85 'Barlow Condensed';margin:15px 0}
+.pill{display:inline-block;font-size:9px;letter-spacing:1.4px;font-weight:800;padding:6px 8px;border:1px solid #485248}
+.adSlot{min-height:90px;border:1px dashed #384038;color:#596159;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:2px;margin:35px 0}
+@media(max-width:700px){.articleList{grid-template-columns:1fr}.articleWrap{padding-top:55px}}
