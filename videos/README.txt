@@ -1,19 +1,14 @@
-LEONIDA - CLIPS LOCALES
+V8 - CLIPS INTEGRADOS
 
-Coloca aquí los MP4 que quieras publicar con permiso/derecho para hacerlo.
+La página clips-gameplay.html ahora muestra varios clips de 30 segundos
+reproducidos dentro de LEONIDA mediante el reproductor oficial de YouTube.
 
-Nombres que usa clips-gameplay.html:
-conduccion-01.mp4
-conduccion-02.mp4
-conduccion-03.mp4
-movilidad-01.mp4
-combate-01.mp4
-entorno-01.mp4
+Categorías:
+- conducción
+- movilidad
+- combate
+- entorno
+- vehículos
 
-Recomendado:
-- MP4 (H.264)
-- clips de ~30 segundos
-- 1080p
-- peso optimizado para web
-
-Los vídeos se reproducen directamente dentro de LEONIDA.
+Fuente: material oficial de Rockstar Games.
+No se alojan ni redistribuyen archivos filtrados de terceros.

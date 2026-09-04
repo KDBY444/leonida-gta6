@@ -15,6 +15,32 @@
 .local-video-note p{margin:8px 0 0;line-height:1.6;font-size:13px}
 .local-video-note code{color:#fff}
 </style>
+
+<style>
+.clip-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.clip-card{overflow:hidden;border-radius:16px;border:1px solid #252b2d;background:linear-gradient(180deg,#101415,#0b0e0f);transition:transform .18s ease,border-color .18s ease}
+.clip-card:hover{transform:translateY(-3px);border-color:rgba(198,255,37,.45)}
+.clip-card.featured-clip{grid-column:span 2}
+.clip-card .thumb{height:280px;position:relative}
+.clip-card.featured-clip .thumb{height:360px}
+.video-thumb video{width:100%;height:100%;object-fit:cover;background:#030404}
+.video-thumb:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.08),transparent 55%,rgba(0,0,0,.5))}
+.status-badge{position:absolute;top:14px;left:14px;z-index:4;padding:7px 10px;border-radius:999px;background:#2b1510;border:1px solid #6d3423;color:#ff9b6c;font-size:10px;font-weight:900;letter-spacing:.08em}
+.duration{position:absolute;right:14px;bottom:14px;z-index:4;background:#050606e8;color:#fff;padding:6px 8px;border-radius:6px;font-size:12px}
+.clip-body{padding:19px 20px 20px}
+.clip-kicker{font-size:10px;font-weight:900;letter-spacing:.12em;color:#c7ff26;margin-bottom:8px}
+.clip-body h3{font-size:21px;line-height:1.2;margin:0 0 9px;color:#f4f6f6}
+.clip-body p{font-size:13px;line-height:1.6;color:#aab4b7;margin:0 0 16px}
+.clip-meta{display:flex;gap:10px;flex-wrap:wrap;color:#7f8b8e;font-size:10px;font-weight:800;letter-spacing:.05em}
+.clip-meta span:first-child{color:#c7ff26}
+@media(max-width:850px){.clip-grid{grid-template-columns:1fr}.clip-card.featured-clip{grid-column:span 1}.clip-card .thumb,.clip-card.featured-clip .thumb{height:240px}}
+</style>
+<style>
+.video-thumb iframe{display:block;width:100%;height:100%;min-height:210px;border:0;background:#050606;position:relative;z-index:2}
+.clip-card.featured-clip .video-thumb iframe{min-height:360px}
+.status-badge.green{background:#10220d;border-color:#365e22;color:#c7ff26}
+@media(max-width:850px){.clip-card.featured-clip .video-thumb iframe{min-height:240px}}
+</style>
 </head>
 <body>
 <div class="page-shell">
@@ -64,83 +90,89 @@
 <section class="clip-layout"><div>
 <div class="clip-grid">
 
-<article class="clip-card clip-item" data-cat="vehicle">
+<article class="clip-card clip-item featured-clip" data-cat="vehicle">
   <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02.0-2n5rm9n8.rq.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/conduccion-01.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=0&end=30" title="GTA VI Extended Look — conducción" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
   </div>
-  <div class="clip-body"><span class="mini-tag">CONDUCCIÓN</span><h3>Clip 01 · Conducción</h3>
-  <p>Vídeo de 30 segundos centrado en aceleración, curvas y comportamiento del vehículo.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
-</article>
-
-<article class="clip-card clip-item" data-cat="vehicle">
-  <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/conduccion-02.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 01</div>
+    <h3>La conducción y el movimiento del vehículo</h3>
+    <p>Un fragmento corto del material oficial para observar cómo se mueve el vehículo, la cámara y el entorno durante la conducción.</p>
+    <div class="clip-meta"><span>🚗 CONDUCCIÓN</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
   </div>
-  <div class="clip-body"><span class="mini-tag">CONDUCCIÓN</span><h3>Clip 02 · Maniobras</h3>
-  <p>Segundo fragmento dedicado a giros, frenadas y respuesta del vehículo.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
-</article>
-
-<article class="clip-card clip-item" data-cat="vehicle">
-  <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/conduccion-03.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
-  </div>
-  <div class="clip-body"><span class="mini-tag">CONDUCCIÓN</span><h3>Clip 03 · Conducción en carretera</h3>
-  <p>Fragmento centrado en conducción y entorno para comparar la movilidad mostrada.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
 </article>
 
 <article class="clip-card clip-item" data-cat="movement">
   <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_01.0naeahss9-1x6.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/movilidad-01.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=30&end=60" title="GTA VI Extended Look — movilidad" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
   </div>
-  <div class="clip-body"><span class="mini-tag">MOVILIDAD</span><h3>Clip 04 · Movimiento del personaje</h3>
-  <p>Fragmento dedicado a desplazamiento, animaciones e interacción con el entorno.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 02</div>
+    <h3>Movimiento y animaciones de los personajes</h3>
+    <p>Fíjate en las transiciones de movimiento, las animaciones y la forma en que los personajes reaccionan al entorno.</p>
+    <div class="clip-meta"><span>🏃 MOVILIDAD</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
+  </div>
 </article>
 
 <article class="clip-card clip-item" data-cat="combat">
   <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/combate-01.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=60&end=90" title="GTA VI Extended Look — combate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
   </div>
-  <div class="clip-body"><span class="mini-tag red">COMBATE</span><h3>Clip 05 · Combate</h3>
-  <p>Fragmento corto para analizar animaciones, cobertura y respuesta del personaje.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 03</div>
+    <h3>Disparos, apuntado y respuesta del personaje</h3>
+    <p>Un corte breve para fijarse en las animaciones, el apuntado y la respuesta del personaje durante la acción.</p>
+    <div class="clip-meta"><span>🔫 COMBATE</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
+  </div>
 </article>
 
 <article class="clip-card clip-item" data-cat="world">
   <div class="thumb video-thumb">
-    <video controls preload="metadata" poster="https://www.rockstargames.com/VI/_next/static/media/Grassrivers_01.1096rw4lbjur_.jpg?akim=1&imdensity=1&imwidth=1280">
-      <source src="videos/entorno-01.mp4" type="video/mp4">
-    </video>
-    <b class="duration">00:30</b>
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=90&end=120" title="GTA VI Extended Look — entorno" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
   </div>
-  <div class="clip-body"><span class="mini-tag orange">ENTORNO</span><h3>Clip 06 · Mundo y NPC</h3>
-  <p>Fragmento para observar tráfico, NPC, vegetación y actividad del mundo.</p>
-  <div class="clip-meta"><span>30 S</span><span>•</span><span>ARCHIVO LOCAL</span></div></div>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 04</div>
+    <h3>El entorno está en movimiento constantemente</h3>
+    <p>Observa NPC, tráfico, animales y actividad ambiental en un fragmento pensado para descubrir pequeños detalles.</p>
+    <div class="clip-meta"><span>🌴 ENTORNO</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
+  </div>
 </article>
 
-</div>
+<article class="clip-card clip-item" data-cat="vehicle">
+  <div class="thumb video-thumb">
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=120&end=150" title="GTA VI Extended Look — vehículos" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
+  </div>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 05</div>
+    <h3>Vehículos y detalles que pasan rápido</h3>
+    <p>Una selección corta para observar vehículos, tráfico y detalles visuales que pueden pasar desapercibidos.</p>
+    <div class="clip-meta"><span>🚘 VEHÍCULOS</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
+  </div>
+</article>
+
+<article class="clip-card clip-item" data-cat="movement">
+  <div class="thumb video-thumb">
+    <iframe src="https://www.youtube.com/embed/tJbzMqJGH4k?start=150&end=180" title="GTA VI Extended Look — interacción" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <span class="status-badge green">🟢 OFICIAL</span><b class="duration">00:30</b>
+  </div>
+  <div class="clip-body">
+    <div class="clip-kicker">¿TE FIJASTE EN ESTO? · 06</div>
+    <h3>Interacción y movimiento en escena</h3>
+    <p>Fíjate en las pequeñas interacciones y animaciones que ayudan a que la escena se sienta más viva.</p>
+    <div class="clip-meta"><span>🏃 MOVILIDAD</span><span>30 S</span><span>ROCKSTAR GAMES</span></div>
+  </div>
+</article>
+
+</div></div>
 
 <div class="local-video-note">
-  <strong>📁 Vídeos reproducidos dentro de LEONIDA</strong>
-  <p>Esta sección está preparada para reproducir archivos MP4 directamente desde tu propia web. Los nombres esperados están en la carpeta <code>videos/</code>. No se alojan automáticamente filtraciones de terceros: utiliza únicamente material que tengas derecho a publicar.</p>
+  <strong>🎬 Vídeos reproducidos dentro de LEONIDA</strong>
+  <p>Los clips de esta sección están integrados en la propia página mediante el reproductor oficial de YouTube. El contenido procede del material oficial de Rockstar Games y se muestra con su reproductor, sin descargar ni redistribuir el archivo de vídeo.</p>
 </div>
 
 <div class="video-feature">
