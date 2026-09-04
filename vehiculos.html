@@ -1,20 +1,73 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vehículos de GTA VI | LEONIDA</title><meta name="description" content="LEONIDA: información visual y análisis de GTA VI. Vehículos, mapa, mecánicas, personajes, filtraciones y novedades."><link rel="stylesheet" href="style.css?v=11"></head><body>
-<header><div class="wrap nav">
-<a class="logo" href="index.html">LEONIDA<span>.</span></a>
-<nav>
-<a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="vehiculos.html">Vehículos</a><a href="mecanicas.html">Mecánicas</a><a href="personajes.html">Personajes</a><a href="filtraciones.html">Filtraciones</a><a href="galeria.html">Galería</a>
-</nav></div></header>
-<main>
-<section><div class="wrap"><div class="eyebrow">VEHÍCULOS</div><h1>Los vehículos que ya puedes ver.</h1><p style="max-width:760px;font-size:19px;color:#bfc6c8">No todos los modelos tienen nombre oficial todavía. Por eso separamos los que Rockstar identifica claramente de los que solo podemos reconocer por imagen.</p>
-<div class="notice"><strong>Fuente visual:</strong> Rockstar publica capturas oficiales de vehículos y contenido de las ediciones del juego. Las fichas de abajo parten de ese material.</div>
-<div class="grid">
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado · Ultimate Edition</span><h3>Grotti Cheetah '95</h3><p>Un deportivo clásico incluido entre los beneficios mostrados por Rockstar. La galería oficial ofrece cuatro imágenes dedicadas al modelo.</p><div class="meta"><span>🏁 Deportivo</span><span>📸 4 capturas oficiales</span></div></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado · Ultimate Edition</span><h3>Shitzu Squalo</h3><p>Una embarcación incluida en el contenido de la edición Ultimate. El material oficial permite apreciar su diseño y presencia en el agua.</p><div class="meta"><span>🛥️ Lancha</span><span>📸 4 capturas oficiales</span></div></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_01.0jxfiql~371ik.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado · Ultimate Edition</span><h3>Vapid Dominator Buggy '67</h3><p>Un vehículo de estilo clásico/off-road mostrado como parte del contenido de la edición Ultimate.</p><div class="meta"><span>🏜️ Off-road</span><span>📸 4 capturas oficiales</span></div></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02.0-2n5rm9n8.rq.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado</span><h3>Vehículos del refugio de Jason</h3><p>Rockstar muestra vehículos asociados al refugio de Jason. Es una pista visual importante sobre cómo se presenta su colección.</p></div></div>
-</div></div></section>
-<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">PARA COMPLETISTAS</div><h2>Fichas que iremos ampliando</h2></div><p>Cuando Rockstar nombre o muestre más modelos, cada uno tendrá su propia ficha con imágenes y detalles observables.</p></div>
-<div class="grid2"><div class="card"><div class="pad"><h3>🔍 Qué miramos en cada vehículo</h3><p>Diseño exterior, época aparente, categoría, interiores visibles, personalización mostrada y contexto de aparición.</p></div></div><div class="card"><div class="pad"><h3>⚠️ Lo que no inventamos</h3><p>Prestaciones, velocidad máxima o nombres no confirmados no se presentan como hechos. Si es una identificación de la comunidad, queda marcada.</p></div></div></div></div></section>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vehículos confirmados de GTA VI | LEONIDA</title>
+<meta name="description" content="Catálogo de vehículos confirmados de GTA VI. Solo incluimos vehículos respaldados por material oficial de Rockstar Games y distinguimos claramente los datos confirmados de las estimaciones.">
+<link rel="stylesheet" href="style.css?v=20">
+<style>
+:root{--red:#ff334d;--bg:#070909;--panel:#0d1112;--line:#252b2d;--muted:#9da8ab;--green:#35d66f}
+body{background:var(--bg)}
+.vehicle-page{max-width:1500px;margin:0 auto;padding:34px 34px 60px}
+.vehicle-hero{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:26px}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--red);margin-bottom:10px}
+.vehicle-hero h1{font-size:clamp(34px,4vw,58px);line-height:.98;margin:0 0 13px;color:#f4f6f6;letter-spacing:-.03em}
+.vehicle-hero p{max-width:720px;color:var(--muted);line-height:1.65;margin:0;font-size:14px}
+.truth-box{max-width:440px;border:1px solid rgba(255,51,77,.42);background:linear-gradient(180deg,#111516,#0a0d0e);border-radius:14px;padding:18px 20px;box-shadow:0 12px 35px rgba(0,0,0,.25)}
+.truth-box strong{display:block;color:#fff;font-size:14px;margin-bottom:8px}.truth-box p{font-size:12px;line-height:1.6;color:#b9c1c3;margin:0}.truth-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px;box-shadow:0 0 12px rgba(53,214,111,.45)}
+.vehicle-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#090c0d}
+.vehicle-table{width:100%;min-width:1120px;border-collapse:separate;border-spacing:0}
+.vehicle-table th{padding:15px 16px;text-align:left;font-size:10px;letter-spacing:.12em;color:#7f8b8e;background:#0c1011;border-bottom:1px solid var(--line);white-space:nowrap}
+.vehicle-table td{padding:16px;border-bottom:1px solid #1c2224;vertical-align:middle;color:#d9dfe0}
+.vehicle-table tr:last-child td{border-bottom:0}.vehicle-table tbody tr{transition:background .18s ease}.vehicle-table tbody tr:hover{background:rgba(255,51,77,.035)}
+.vehicle-img{width:250px;height:145px;object-fit:cover;border-radius:10px;border:1px solid #303739;display:block;background:#050606}
+.vehicle-name{font-size:18px;font-weight:900;color:#f2f4f4;margin-bottom:5px}.vehicle-alias{font-size:12px;color:#889396;font-style:italic}.official-name{font-weight:800;color:#fff;font-size:14px;line-height:1.4}.category{color:#e0e5e6;font-weight:700}.spec{font-weight:800;color:#f1f4f4}.unknown{color:#8c9698;font-weight:600}
+.status{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border-radius:8px;background:#102719;border:1px solid #245c36;color:#70ee9a;font-size:10px;font-weight:900;letter-spacing:.07em;white-space:nowrap}.status:before{content:'✓';display:grid;place-items:center;width:17px;height:17px;border-radius:50%;background:#2aa75a;color:#061109;font-size:11px}
+.source{color:var(--red);font-weight:800;font-size:12px;line-height:1.45}.source small{display:block;color:#778184;font-weight:600;font-size:10px;margin-top:4px}
+.note{margin-top:18px;border:1px solid rgba(255,51,77,.35);border-radius:12px;background:rgba(255,51,77,.045);padding:16px 18px;color:#c8d0d2;font-size:12px;line-height:1.65}.note b{color:#fff}.note .red{color:var(--red)}
+.source-note{margin-top:10px;color:#6f7a7d;font-size:11px;line-height:1.6}
+@media(max-width:800px){.vehicle-page{padding:24px 16px 45px}.vehicle-hero{flex-direction:column}.truth-box{max-width:none}.vehicle-img{width:190px;height:112px}}
+</style>
+</head>
+<body>
+<div class="page-shell">
+<aside class="side">
+  <div class="side-logo"><strong>LEONIDA</strong><small>GTA VI · VISTO DE CERCA.</small></div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ico">⌂</span> INICIO</a>
+    <a href="index.html#noticias"><span class="ico">▤</span> NOTICIAS</a>
+    <a href="mapa.html"><span class="ico">⌖</span> MAPA</a>
+    <a href="vehiculos.html" class="active"><span class="ico">▱</span> VEHÍCULOS</a>
+    <a href="mecanicas.html"><span class="ico">✣</span> MECÁNICAS</a>
+    <a href="personajes.html"><span class="ico">♙</span> PERSONAJES</a>
+    <a href="filtraciones.html"><span class="ico">🔥</span> FILTRACIONES</a>
+    <a href="galeria.html"><span class="ico">▧</span> GALERÍA</a>
+  </nav>
+  <div class="side-box"><h4>NIVEL DE VERACIDAD</h4><div class="confidence"><div><span>CONFIRMADO</span></div><div class="blue"><span>VISTO EN GAMEPLAY</span></div><div class="orange"><span>FILTRACIÓN CREÍBLE</span></div><div class="yellow"><span>RUMOR</span></div><div class="red"><span>NO CONFIRMADO</span></div></div></div>
+</aside>
+<div class="main-panel">
+<header class="topbar"><div class="crumb"><b>VEHÍCULOS</b> &nbsp;›&nbsp; CONFIRMADOS</div><input class="top-search" type="search" placeholder="Buscar en LEONIDA..."></header>
+<main class="vehicle-page">
+<section class="vehicle-hero">
+  <div><div class="eyebrow">ARCHIVO DE VEHÍCULOS · MATERIAL OFICIAL</div><h1>VEHÍCULOS<br>CONFIRMADOS</h1><p>Esta sección solo incluye vehículos que Rockstar Games ha mostrado o nombrado en material oficial. <b>No mezclamos aquí rumores ni filtraciones.</b> Cuando una especificación técnica no ha sido confirmada, la dejamos como tal en vez de inventarla.</p></div>
+  <div class="truth-box"><strong><span class="truth-dot"></span>VISTO EN MATERIAL OFICIAL</strong><p>La etiqueta <b>CONFIRMADO</b> significa que existe respaldo oficial de Rockstar Games. No significa que Rockstar haya confirmado cada dato técnico del vehículo.</p></div>
+</section>
+<div class="vehicle-table-wrap">
+<table class="vehicle-table">
+<thead><tr><th>IMAGEN</th><th>NOMBRE DEL VEHÍCULO</th><th>NOMBRE OFICIAL</th><th>CATEGORÍA</th><th>MOTOR</th><th>CILINDRADA</th><th>ESTADO</th><th>CONFIRMACIÓN</th></tr></thead>
+<tbody>
+<tr><td><img class="vehicle-img" src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_01.0a.wy3s_ogjey.jpg?akim=1&imdensity=1&imwidth=1280" alt="Grotti Cheetah del 95 de GTA VI"></td><td><div class="vehicle-name">Cheetah del 95</div><div class="vehicle-alias">Superdeportivo clásico</div></td><td class="official-name">’95 Grotti Cheetah</td><td class="category">Superdeportivo</td><td class="unknown">No confirmado</td><td class="unknown">No confirmado</td><td><span class="status">CONFIRMADO</span></td><td class="source">Material oficial<small>Ultimate Edition / Rockstar Games</small></td></tr>
+<tr><td><img class="vehicle-img" src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg?akim=1&imdensity=1&imwidth=1280" alt="Shitzu Squalo de GTA VI"></td><td><div class="vehicle-name">Squalo</div><div class="vehicle-alias">Lancha</div></td><td class="official-name">Shitzu Squalo</td><td class="category">Marítimo</td><td class="unknown">No confirmado</td><td class="unknown">No confirmado</td><td><span class="status">CONFIRMADO</span></td><td class="source">Material oficial<small>Ultimate Edition / Rockstar Games</small></td></tr>
+<tr><td><img class="vehicle-img" src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_01.0jxfiql~371ik.jpg?akim=1&imdensity=1&imwidth=1280" alt="Vapid Dominator Buggy del 67 de GTA VI"></td><td><div class="vehicle-name">Dominator Buggy del 67</div><div class="vehicle-alias">Buggy todoterreno</div></td><td class="official-name">’67 Vapid Dominator Buggy</td><td class="category">Todoterreno</td><td class="unknown">No confirmado</td><td class="unknown">No confirmado</td><td><span class="status">CONFIRMADO</span></td><td class="source">Material oficial<small>Ultimate Edition / Rockstar Games</small></td></tr>
+<tr><td><img class="vehicle-img" src="https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.004m_8d1~qngy.jpg?akim=1&imdensity=1&imwidth=1280" alt="Vapid Stanier del 55 de GTA VI"></td><td><div class="vehicle-name">Stanier del 55</div><div class="vehicle-alias">Sedán clásico</div></td><td class="official-name">’55 Vapid Stanier</td><td class="category">Sedán clásico</td><td class="unknown">No confirmado</td><td class="unknown">No confirmado</td><td><span class="status">CONFIRMADO</span></td><td class="source">Material oficial<small>Vintage Vice City Pack / Rockstar Games</small></td></tr>
+<tr><td><img class="vehicle-img" src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02.0-2n5rm9n8.rq.jpg?akim=1&imdensity=1&imwidth=1280" alt="Dinka Enduro de GTA VI"></td><td><div class="vehicle-name">Enduro</div><div class="vehicle-alias">Motocicleta todoterreno</div></td><td class="official-name">Dinka Enduro</td><td class="category">Motocicleta</td><td class="unknown">No confirmado</td><td class="unknown">No confirmado</td><td><span class="status">CONFIRMADO</span></td><td class="source">Material oficial<small>Ultimate Edition / Rockstar Games</small></td></tr>
+</tbody>
+</table>
+</div>
+<div class="note"><b>NOTA:</b> Rockstar Games no ha confirmado todas las especificaciones técnicas de los vehículos. Los datos no confirmados se indican como <span class="red">estimaciones basadas en sus posibles modelos reales</span>. En esta página preferimos mostrar <b>“No confirmado”</b> antes que presentar una estimación como un dato oficial.</div>
+<div class="source-note">Fuente de confirmación: material oficial publicado por Rockstar Games en la web de Grand Theft Auto VI. Las imágenes utilizadas en esta sección proceden del material oficial de Rockstar. Esta web es independiente y no está afiliada a Rockstar Games.</div>
 </main>
-<footer><div class="wrap cols"><div><b>LEONIDA</b><br>Portal independiente de fans sobre GTA VI.</div><div>Contenido oficial y rumores separados. No estamos afiliados a Rockstar Games.</div><div><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="contacto.html">Contacto</a></div></div></footer>
-<script src="script.js"></script></body></html>
+<footer><div class="wrap cols"><div><b>LEONIDA</b><br>Portal independiente de fans sobre GTA VI.</div><div>Contenido oficial, filtraciones y rumores separados claramente.</div><div><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="contacto.html">Contacto</a></div></div></footer>
+</div></div>
+</body></html>
