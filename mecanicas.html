@@ -1,19 +1,94 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mecánicas de GTA VI | LEONIDA</title><meta name="description" content="LEONIDA: información visual y análisis de GTA VI. Vehículos, mapa, mecánicas, personajes, filtraciones y novedades."><link rel="stylesheet" href="style.css?v=11"></head><body>
-<header><div class="wrap nav">
-<a class="logo" href="index.html">LEONIDA<span>.</span></a>
-<nav>
-<a href="index.html">Inicio</a><a href="mapa.html">Mapa</a><a href="vehiculos.html">Vehículos</a><a href="mecanicas.html">Mecánicas</a><a href="personajes.html">Personajes</a><a href="filtraciones.html">Filtraciones</a><a href="galeria.html">Galería</a>
-</nav></div></header>
-<main>
-<section><div class="wrap"><div class="eyebrow">MECÁNICAS</div><h1>Lo que el gameplay deja ver.</h1><p style="max-width:780px;font-size:19px;color:#bfc6c8">Esta sección no trata de rellenar una lista de “posibles novedades”. Cada ficha parte de algo que puede observarse en material oficial o de algo que Rockstar ha descrito.</p>
-<div class="grid">
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_01.0naeahss9-1x6.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag gameplay">Visto en gameplay</span><h3>Jason y Lucia como dúo</h3><p>El material oficial centra buena parte de la presentación en Jason Duval y Lucia Caminos y en cómo sus historias se cruzan. El Extended Look amplía el contexto de su relación.</p></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VICE_CITY_STYLE_05.0img~prrjg.bc.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado</span><h3>Ropa y estilo</h3><p>Rockstar muestra estilos de Vice City, outfits y peluquería entre el contenido presentado para el juego.</p></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02.0-2n5rm9n8.rq.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag confirmed">Confirmado</span><h3>Vehículos ligados al refugio</h3><p>El material oficial de la edición Ultimate incluye vehículos del refugio de Jason, además de otros contenidos relacionados con personalización.</p></div></div>
-<div class="card"><img src="https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_01.0fmisvza-5-cq.jpg?akim=1&imdensity=1&imwidth=3840"><div class="pad"><span class="tag gameplay">Mundo abierto</span><h3>Escala y variedad de entornos</h3><p>Las capturas oficiales muestran contrastes fuertes entre ciudad, costa, humedales, carreteras y zonas naturales.</p></div></div>
-</div></div></section>
-<section><div class="wrap"><div class="section-head"><div><div class="eyebrow">CÓMO LEEMOS EL GAMEPLAY</div><h2>Un detalle no es una mecánica.</h2></div></div>
-<div class="grid2"><div class="card"><div class="pad"><h3>👁️ Evidencia visual</h3><p>Si vemos una acción en pantalla, la describimos como “vista” sin extrapolar automáticamente que exista un sistema completo detrás.</p></div></div><div class="card"><div class="pad"><h3>🧠 Análisis</h3><p>Cuando proponemos una interpretación —por ejemplo, qué podría significar una animación— la marcamos como análisis, no como confirmación.</p></div></div></div></div></section>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mecánicas de GTA VI | LEONIDA</title>
+<meta name="description" content="Mecánicas de GTA VI separadas por evidencia: gameplay oficial, material de Rockstar y detalles que todavía no están confirmados.">
+<link rel="stylesheet" href="style.css?v=22">
+<style>
+:root{--red:#ff334d;--bg:#070909;--panel:#0d1112;--line:#252b2d;--muted:#9da8ab;--green:#35d66f;--blue:#55c8ff;--yellow:#ffd84d}
+body{background:var(--bg)}
+.mechanics-page{max-width:1450px;margin:0 auto;padding:34px 32px 60px}
+.m-hero{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:28px}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--red);margin-bottom:10px}
+.m-hero h1{font-size:clamp(36px,5vw,62px);line-height:.94;margin:0 0 14px;letter-spacing:-.04em}
+.m-hero p{max-width:760px;color:var(--muted);font-size:15px;line-height:1.7;margin:0}
+.truth-box{max-width:440px;border:1px solid rgba(255,51,77,.4);background:linear-gradient(180deg,#111516,#0a0d0e);border-radius:14px;padding:18px 20px}
+.truth-box strong{display:block;color:#fff;font-size:14px;margin-bottom:8px}.truth-box p{margin:0;color:#b9c1c3;font-size:12px;line-height:1.6}.green-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px;box-shadow:0 0 12px rgba(53,214,111,.45)}
+.section-title{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:36px 0 16px}.section-title h2{font-size:28px;margin:0}.section-title p{margin:0;color:#778184;font-size:12px}
+.mechanics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.m-card{background:linear-gradient(180deg,#111516,#0b0e0f);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.18s}.m-card:hover{transform:translateY(-3px);border-color:#454c4f}
+.m-card-top{padding:19px 20px 15px;border-bottom:1px solid #1e2426;display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.m-icon{width:48px;height:48px;display:grid;place-items:center;border:1px solid #343b3e;border-radius:12px;background:#0a0c0d;font-size:24px}.m-title{flex:1}.m-title h3{margin:0 0 6px;font-size:22px}.m-title p{margin:0;color:#8f999c;font-size:12px}.badge{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border-radius:8px;font-size:9px;font-weight:900;letter-spacing:.06em;white-space:nowrap}.badge.green{background:#102719;border:1px solid #245c36;color:#70ee9a}.badge.blue{background:#10232c;border:1px solid #20526a;color:#8edaff}.m-body{padding:17px 20px 20px}.m-body p{color:#c5cbcd;font-size:14px;line-height:1.65;margin:0 0 13px}.evidence{border-left:3px solid var(--red);padding:8px 11px;background:#0b0e0f;color:#aeb7ba;font-size:11px;line-height:1.55}.evidence b{color:#fff}.clip{margin-top:14px;border-radius:11px;overflow:hidden;border:1px solid #2b3234;background:#050606}.clip video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}.clip-label{padding:8px 10px;color:#818b8e;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.highlight{margin-top:20px;border:1px solid rgba(255,51,77,.4);background:linear-gradient(135deg,#150b0e,#0d1112);border-radius:15px;padding:19px}.highlight h3{margin:0 0 7px;font-size:20px}.highlight p{margin:0;color:#bfc6c8;font-size:13px;line-height:1.65}.highlight strong{color:#ff6a7a}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.rule{border:1px solid var(--line);background:#0d1112;border-radius:12px;padding:14px}.rule b{display:block;margin-bottom:5px;color:#fff;font-size:12px}.rule span{font-size:11px;color:#879194;line-height:1.5}
+.note{margin-top:28px;border:1px solid rgba(255,51,77,.35);border-radius:12px;background:rgba(255,51,77,.045);padding:16px 18px;color:#c8d0d2;font-size:12px;line-height:1.65}.note b{color:#fff}.note .red{color:var(--red)}
+@media(max-width:900px){.m-hero{flex-direction:column}.mechanics-grid,.rules{grid-template-columns:1fr}.mechanics-page{padding:25px 16px 45px}.m-card-top{flex-wrap:wrap}.truth-box{max-width:none}}
+</style>
+</head>
+<body>
+<div class="page-shell">
+<aside class="side">
+  <div class="side-logo"><strong>LEONIDA</strong><small>GTA VI · VISTO DE CERCA.</small></div>
+  <nav class="side-nav">
+    <a href="index.html"><span class="ico">⌂</span> INICIO</a>
+    <a href="index.html#noticias"><span class="ico">▤</span> NOTICIAS</a>
+    <a href="mapa.html"><span class="ico">⌖</span> MAPA</a>
+    <a href="vehiculos.html"><span class="ico">▱</span> VEHÍCULOS</a>
+    <a href="mecanicas.html" class="active"><span class="ico">✣</span> MECÁNICAS</a>
+    <a href="personajes.html"><span class="ico">♙</span> PERSONAJES</a>
+    <a href="filtraciones.html"><span class="ico">🔥</span> FILTRACIONES</a>
+    <a href="galeria.html"><span class="ico">▧</span> GALERÍA</a>
+  </nav>
+  <div class="side-box"><h4>NIVEL DE VERACIDAD</h4><div class="confidence"><div><span>CONFIRMADO</span></div><div class="blue"><span>VISTO EN GAMEPLAY</span></div><div class="orange"><span>FILTRACIÓN CREÍBLE</span></div><div class="yellow"><span>RUMOR</span></div><div class="red"><span>NO CONFIRMADO</span></div></div></div>
+</aside>
+<div class="main-panel">
+<header class="topbar"><div class="crumb"><b>MECÁNICAS</b> &nbsp;›&nbsp; GAMEPLAY</div><input class="top-search" type="search" placeholder="Buscar en LEONIDA..."></header>
+<main class="mechanics-page">
+<section class="m-hero">
+  <div><div class="eyebrow">MECÁNICAS · EVIDENCIA</div><h1>¿CÓMO SE JUEGA<br>GTA VI?</h1><p>Aquí no confundimos una teoría con una función del juego. Las mecánicas principales de esta página parten de lo que Rockstar ha mostrado en material oficial. Cuando algo todavía no está demostrado, lo decimos.</p></div>
+  <div class="truth-box"><strong><span class="green-dot"></span>REGLA DE LEONIDA</strong><p><b>Visto en gameplay</b> significa que la acción aparece en material oficial. No significa que conozcamos todos los controles, límites o reglas internas del sistema.</p></div>
+</section>
+
+<div class="highlight"><h3>🔥 Lo que más ha cambiado</h3><p>El gameplay oficial deja ver un mundo mucho más <strong>interactivo</strong>: los robos ocurren físicamente, la policía dispone de una escala de <strong>seis estrellas</strong>, Jason y Lucia pueden coordinarse, y muchas acciones tienen una presentación contextual más detallada.</p></div>
+
+<div class="section-title"><div><div class="eyebrow">CONFIRMADO · MATERIAL OFICIAL</div><h2>Mecánicas que ya podemos demostrar</h2></div><p>No añadimos rumores a esta lista.</p></div>
+<div class="mechanics-grid">
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🚔</div><div class="m-title"><h3>Seis estrellas de búsqueda</h3><p>El sistema policial recupera una sexta estrella.</p></div><span class="badge green">✓ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>En el gameplay oficial aparece una escala de <b>6 estrellas</b>. Es uno de los detalles más fáciles de pasar por alto durante una persecución.</p><div class="evidence"><b>Evidencia:</b> el medidor de búsqueda se ve en el material oficial de gameplay. No afirmamos qué unidades aparecen en cada nivel porque Rockstar no ha publicado una tabla completa.</div><div class="clip"><video controls preload="metadata" poster="videos/disparos.jpg"><source src="videos/disparos.mp4" type="video/mp4"></video><div class="clip-label">Clip de gameplay · persecución / combate</div></div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">💵</div><div class="m-title"><h3>Robar dinero de las cajas registradoras</h3><p>El dinero aparece físicamente en el mundo.</p></div><span class="badge green">✓ VISTO EN MATERIAL OFICIAL</span></div><div class="m-body"><p>En el material oficial vemos a Jason <b>abrir una caja registradora y coger el dinero</b>. El robo no se presenta simplemente como una pantalla de recompensa.</p><div class="evidence"><b>Importante:</b> esto demuestra la acción mostrada. No damos por confirmado un sistema universal de botín para todos los comercios hasta que exista evidencia suficiente.</div><div class="clip"><video controls preload="metadata" poster="videos/disparos.jpg"><source src="videos/disparos.mp4" type="video/mp4"></video><div class="clip-label">Clip de gameplay · robo / disparos</div></div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">👥</div><div class="m-title"><h3>Jason y Lucia como pareja jugable</h3><p>Dos protagonistas que trabajan juntos.</p></div><span class="badge green">✓ CONFIRMADO</span></div><div class="m-body"><p>Rockstar presenta a Jason y Lucia como el centro de la historia y muestra situaciones en las que <b>actúan coordinados</b>, especialmente durante delitos y huidas.</p><div class="evidence"><b>Qué sabemos:</b> la relación y la cooperación son parte central del juego. Los detalles exactos de cuándo y cómo se puede cambiar entre ambos dependen de la situación.</div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🚗</div><div class="m-title"><h3>Cambiar de vehículo durante la acción</h3><p>La huida puede continuar después de abandonar un coche.</p></div><span class="badge green">✓ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>El gameplay muestra persecuciones y secuencias en las que los protagonistas <b>abandonan o cambian de vehículo</b> para continuar la huida.</p><div class="evidence"><b>No añadimos:</b> supuestas reglas de “despiste perfecto” o porcentajes de detección que Rockstar no haya explicado.</div><div class="clip"><video controls preload="metadata" poster="videos/conduccion.jpg"><source src="videos/conduccion.mp4" type="video/mp4"></video><div class="clip-label">Clip de gameplay · conducción</div></div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🔫</div><div class="m-title"><h3>Disparar desde vehículos</h3><p>Combate integrado en las persecuciones.</p></div><span class="badge green">✓ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>Los protagonistas pueden <b>disparar mientras se desplazan en vehículos</b>. El material también muestra intercambio de fuego durante persecuciones.</p><div class="evidence"><b>Confirmado visualmente:</b> la acción aparece en pantalla. Los controles concretos y las armas compatibles pueden variar.</div><div class="clip"><video controls preload="metadata" poster="videos/disparos.jpg"><source src="videos/disparos.mp4" type="video/mp4"></video><div class="clip-label">Clip de gameplay · disparos</div></div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🥊</div><div class="m-title"><h3>Combate cuerpo a cuerpo contextual</h3><p>Animaciones adaptadas a la situación.</p></div><span class="badge green">✓ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>El gameplay incluye golpes y acciones cuerpo a cuerpo que reaccionan al espacio y a la situación del personaje, en lugar de mostrar únicamente animaciones genéricas.</p><div class="evidence"><b>Regla:</b> describimos la animación que vemos; no inventamos un árbol de habilidades o un sistema de combos que todavía no se haya demostrado.</div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🏃</div><div class="m-title"><h3>Movimiento y movilidad más física</h3><p>Animaciones, desplazamientos y acciones contextualizadas.</p></div><span class="badge blue">◉ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>El gameplay muestra movimientos más variados al correr, entrar en vehículos, moverse por espacios estrechos y realizar acciones durante una persecución.</p><div class="evidence"><b>Qué podemos afirmar:</b> el comportamiento visual está mostrado. No afirmamos estadísticas ocultas de fuerza, resistencia o velocidad.</div><div class="clip"><video controls preload="metadata" poster="videos/movilidad.jpg"><source src="videos/movilidad.mp4" type="video/mp4"></video><div class="clip-label">Clip de gameplay · movilidad</div></div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🛴</div><div class="m-title"><h3>Micromovilidad en las calles</h3><p>Patinetes eléctricos utilizados por NPCs.</p></div><span class="badge green">✓ MATERIAL OFICIAL</span></div><div class="m-body"><p>Los tráileres muestran <b>patinetes eléctricos circulando por la ciudad</b>. En nuestra sección de vehículos lo registramos como “Patinete eléctrico” porque Rockstar no ha confirmado un nombre de marca para él.</p><div class="evidence"><b>Estado:</b> confirmado por evidencia visual. La posibilidad de conducirlo por el jugador se mantiene separada de lo que podemos observar en el tráiler.</div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">🏋️</div><div class="m-title"><h3>Actividades físicas y deportivas</h3><p>El mundo ofrece actividades más allá de los tiroteos.</p></div><span class="badge green">✓ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>El Extended Look muestra actividades como <b>gimnasio, pesca, kayak, carreras y paracaidismo</b>. Esto forma parte de la variedad de actividades que Rockstar ha enseñado.</p><div class="evidence"><b>Importante:</b> ver una actividad no significa que conozcamos todavía todos sus sistemas de progresión, recompensas o estadísticas.</div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">📱</div><div class="m-title"><h3>El teléfono como objeto del mundo</h3><p>El móvil forma parte de la escena, no solo de un menú.</p></div><span class="badge blue">◉ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>El material oficial muestra el teléfono de los protagonistas integrado en las escenas y utilizado para comunicarse y recibir información.</p><div class="evidence"><b>No confundimos:</b> que exista un teléfono visible no confirma por sí solo todas las funciones de redes sociales o aplicaciones que pueda tener.</div></div></article>
+
+<article class="m-card"><div class="m-card-top"><div class="m-icon">👮</div><div class="m-title"><h3>La policía y la información que tiene sobre ti</h3><p>El HUD muestra pistas de identificación durante la búsqueda.</p></div><span class="badge blue">◉ VISTO EN GAMEPLAY</span></div><div class="m-body"><p>Durante el gameplay se observan indicadores relacionados con lo que la policía puede conocer del personaje, como <b>apariencia, ropa o vehículo</b>. Es un detalle que apunta a un sistema de búsqueda más específico.</p><div class="evidence"><b>Precisión:</b> describimos los indicadores visibles; no afirmamos todavía una fórmula exacta de reconocimiento ni cuánto tiempo permanece cada dato.</div></div></article>
+
+</div>
+
+<div class="section-title"><div><div class="eyebrow">PARA NO ENGAÑAR</div><h2>Lo que todavía no vamos a vender como confirmado</h2></div></div>
+<div class="rules">
+<div class="rule"><b>❌ No inventamos controles</b><span>Si vemos una acción, no significa que sepamos qué botón la activa o si está disponible en cualquier momento.</span></div>
+<div class="rule"><b>❌ No inventamos estadísticas</b><span>Motor, daño, dinero, velocidades o límites que Rockstar no haya dado se quedan como “No confirmado”.</span></div>
+<div class="rule"><b>❌ No mezclamos filtraciones</b><span>Una filtración puede ser interesante, pero tendrá su propia sección y su propia etiqueta.</span></div>
+</div>
+
+<div class="note"><b>NOTA:</b> Rockstar Games no ha confirmado todas las especificaciones y reglas internas de estas mecánicas. En LEONIDA distinguimos entre lo <span class="red">visto en material oficial</span>, lo informado en demostraciones privadas y lo que sigue siendo filtración o rumor.</div>
 </main>
-<footer><div class="wrap cols"><div><b>LEONIDA</b><br>Portal independiente de fans sobre GTA VI.</div><div>Contenido oficial y rumores separados. No estamos afiliados a Rockstar Games.</div><div><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="contacto.html">Contacto</a></div></div></footer>
-<script src="script.js"></script></body></html>
+<footer><div class="wrap cols"><div><b>LEONIDA</b><br>Portal independiente de fans sobre GTA VI.</div><div>Contenido oficial, filtraciones y rumores separados claramente.</div><div><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="contacto.html">Contacto</a></div></div></footer>
+</div></div>
+</body>
+</html>
